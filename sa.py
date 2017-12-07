@@ -8,8 +8,8 @@ def read_value_from_json(key, fichier):
 	values = []
 	with open(fichier) as f:
 		data = json.load(f)
-		for entry in data:
-			values.append(entry[key])
+		for bob in data:
+			values.append(bob[key])
 		return values
 
 # show a random quote
